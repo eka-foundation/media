@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<mlt title="Anonymous Submission" version="6.6.0" producer="main bin" LC_NUMERIC="en_IN">
- <profile width="1920" frame_rate_den="1" height="1080" display_aspect_num="16" display_aspect_den="9" frame_rate_num="25" colorspace="709" sample_aspect_den="1" description="HD 1080p 25 fps" progressive="1" sample_aspect_num="1"/>
- <producer id="3" title="Anonymous Submission" out="49" in="0">
+<mlt title="Anonymous Submission" LC_NUMERIC="en_IN" producer="main bin" version="6.13.0">
+ <profile frame_rate_num="25" sample_aspect_num="1" display_aspect_den="9" colorspace="709" progressive="1" description="HD 1080p 25 fps" display_aspect_num="16" frame_rate_den="1" width="1920" height="1080" sample_aspect_den="1"/>
+ <producer title="Anonymous Submission" id="3" in="0" out="49">
   <property name="length">125</property>
   <property name="eof">pause</property>
   <property name="resource"/>
@@ -11,8 +11,8 @@
   <property name="mlt_service">kdenlivetitle</property>
   <property name="kdenlive:clipname">Title clip</property>
   <property name="kdenlive:folderid">-1</property>
-  <property name="xmldata">&lt;kdenlivetitle width="1920" duration="50" out="50" height="1080" LC_NUMERIC="en_IN">
- &lt;item z-index="1" type="QGraphicsSvgItem">
+  <property name="xmldata">&lt;kdenlivetitle duration="50" LC_NUMERIC="en_IN" width="1920" height="1080" out="50">
+ &lt;item type="QGraphicsSvgItem" z-index="1">
   &lt;position x="260" y="240">
    &lt;transform zoom="400">4,0,0,0,4,0,0,0,1&lt;/transform>
   &lt;/position>
@@ -29,7 +29,7 @@
   <property name="meta.media.width">1920</property>
   <property name="meta.media.height">1080</property>
  </producer>
- <producer id="4" title="Anonymous Submission" out="49" in="0">
+ <producer title="Anonymous Submission" id="4" in="0" out="49">
   <property name="length">125</property>
   <property name="eof">pause</property>
   <property name="resource"/>
@@ -39,8 +39,8 @@
   <property name="mlt_service">kdenlivetitle</property>
   <property name="kdenlive:clipname">Title clip</property>
   <property name="kdenlive:folderid">-1</property>
-  <property name="xmldata">&lt;kdenlivetitle width="1920" duration="50" out="50" height="1080" LC_NUMERIC="en_IN">
- &lt;item z-index="0" type="QGraphicsSvgItem">
+  <property name="xmldata">&lt;kdenlivetitle duration="50" LC_NUMERIC="en_IN" width="1920" height="1080" out="50">
+ &lt;item type="QGraphicsSvgItem" z-index="0">
   &lt;position x="640" y="120">
    &lt;transform zoom="400">4,0,0,0,4,0,0,0,1&lt;/transform>
   &lt;/position>
@@ -57,7 +57,7 @@
   <property name="meta.media.width">1920</property>
   <property name="meta.media.height">1080</property>
  </producer>
- <producer id="2" title="Anonymous Submission" out="124" in="0">
+ <producer title="Anonymous Submission" id="2" in="0" out="124">
   <property name="length">125</property>
   <property name="eof">pause</property>
   <property name="resource">#ffffffff</property>
@@ -81,8 +81,8 @@
   <property name="kdenlive:docproperties.enableproxy">0</property>
   <property name="kdenlive:docproperties.generateimageproxy">0</property>
   <property name="kdenlive:docproperties.generateproxy">0</property>
-  <property name="kdenlive:docproperties.kdenliveversion">17.12.3</property>
-  <property name="kdenlive:docproperties.position">75</property>
+  <property name="kdenlive:docproperties.kdenliveversion">18.12.1</property>
+  <property name="kdenlive:docproperties.position">73</property>
   <property name="kdenlive:docproperties.previewchunks"/>
   <property name="kdenlive:docproperties.previewextension"/>
   <property name="kdenlive:docproperties.previewparameters"/>
@@ -120,11 +120,11 @@
   <property name="kdenlive:docproperties.renderurl">eka-exit-animation.mp4</property>
   <property name="kdenlive:docproperties.renderzone">0</property>
   <property name="xml_retain">1</property>
-  <entry out="49" producer="3" in="0"/>
-  <entry out="49" producer="4" in="0"/>
-  <entry out="124" producer="2" in="0"/>
+  <entry producer="3" in="0" out="49"/>
+  <entry producer="4" in="0" out="49"/>
+  <entry producer="2" in="0" out="124"/>
  </playlist>
- <producer id="black" out="500" in="0">
+ <producer id="black" in="0" out="500">
   <property name="length">15000</property>
   <property name="eof">pause</property>
   <property name="resource">black</property>
@@ -133,7 +133,7 @@
   <property name="set.test_audio">0</property>
  </producer>
  <playlist id="black_track">
-  <entry out="75" producer="black" in="0"/>
+  <entry producer="black" in="0" out="75"/>
  </playlist>
  <playlist id="playlist1">
   <property name="kdenlive:track_name">Audio 2</property>
@@ -145,23 +145,23 @@
  </playlist>
  <playlist id="playlist3">
   <property name="kdenlive:track_name">Video 1</property>
-  <entry out="74" producer="2" in="0"/>
+  <entry producer="2" in="0" out="74"/>
  </playlist>
  <playlist id="playlist4">
   <property name="kdenlive:track_name">Video 2</property>
-  <entry out="74" producer="3" in="0"/>
+  <entry producer="3" in="0" out="74"/>
  </playlist>
  <playlist id="playlist5">
   <property name="kdenlive:track_name">Video 3</property>
-  <entry out="74" producer="4" in="0">
+  <entry producer="4" in="0" out="74">
    <filter id="qtblend">
     <property name="rotate_center">1</property>
     <property name="mlt_service">qtblend</property>
     <property name="kdenlive_id">qtblend</property>
     <property name="tag">qtblend</property>
     <property name="kdenlive_ix">1</property>
-    <property name="rect">29~=0 0 1920 1080 1;35~=50 0 1920 1080 1;40~=-60 0 1920 1080 1;52~=-1600 0 1920 1080 1</property>
-    <property name="rotation">29~=0;35~=0;40~=0;52~=0</property>
+    <property name="rect">29~=0 0 1920 1080 1;35~=50 0 1920 1080 1;40~=-60 0 1920 1080 1;50~=</property>
+    <property name="rotation">29~=0;35~=0;40~=0;50~=</property>
     <property name="compositing">0</property>
     <property name="distort">0</property>
     <property name="kdenlive_info">0/-1/</property>
@@ -365,10 +365,10 @@
    </filter>
   </entry>
  </playlist>
- <tractor id="maintractor" title="Anonymous Submission" global_feed="1" out="75" in="0">
+ <tractor title="Anonymous Submission" id="maintractor" global_feed="1" in="0" out="75">
   <track producer="black_track"/>
-  <track producer="playlist1" hide="video"/>
-  <track producer="playlist2" hide="video"/>
+  <track hide="video" producer="playlist1"/>
+  <track hide="video" producer="playlist2"/>
   <track producer="playlist3"/>
   <track producer="playlist4"/>
   <track producer="playlist5"/>
