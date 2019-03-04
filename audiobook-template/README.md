@@ -14,4 +14,6 @@ On Linux, Audacity is a very good software to do this kind of audio editing.
 
 After you have generated an audio mp3 file, please email Anish Mangal a link to access the file, so he can upload it to the [anchor.fm](http://anchor.fm) website.
 
+[Here](https://anchor.fm/eka-foundation/episodes/Enmeshed-in-la-la-land-The-Long-Road----to-Apricots-e3c4gk) is a reference podcast which covers these elements.
+
 Thats all folks!
